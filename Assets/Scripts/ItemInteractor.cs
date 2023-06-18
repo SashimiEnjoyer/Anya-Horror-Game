@@ -7,6 +7,7 @@ public class ItemInteractor : MonoBehaviour
     [SerializeField] Transform startRayPosition;
     [SerializeField] LayerMask interactableLayer;
     [SerializeField] GameObject UIIndicator;
+    [SerializeField] float rayLength = 2f;
 
     bool itemTouched = false;
     IInteractable currentTouchedItem = null;
@@ -25,7 +26,7 @@ public class ItemInteractor : MonoBehaviour
     {
 
         RaycastHit hit;
-        if (Physics.Raycast(startRayPosition.position, transform.TransformDirection(Vector3.forward), out hit, 4f, interactableLayer))
+        if (Physics.Raycast(startRayPosition.position, startRayPosition.TransformDirection(Vector3.forward), out hit, rayLength, interactableLayer))
         {
             if(!UIIndicator.activeInHierarchy)
                 UIIndicator.SetActive(true);
@@ -36,7 +37,7 @@ public class ItemInteractor : MonoBehaviour
 
             if (!itemTouched)
                 itemTouched = true;
-            //Debug.DrawRay(startRayPosition.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            Debug.DrawRay(startRayPosition.position, startRayPosition.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
         }
         else
         {
@@ -48,14 +49,14 @@ public class ItemInteractor : MonoBehaviour
 
             if (itemTouched)
                 itemTouched = false;
-            // Debug.DrawRay(startRayPosition.position, transform.TransformDirection(Vector3.forward) * 4, Color.white);
+             Debug.DrawRay(startRayPosition.position, startRayPosition.TransformDirection(Vector3.forward) * rayLength, Color.white);
         }
     }
 
     void InteractPressed()
     {
         if (itemTouched)
-            currentTouchedItem.Execute();
+            currentTouchedItem?.Execute();
 
     }
 
