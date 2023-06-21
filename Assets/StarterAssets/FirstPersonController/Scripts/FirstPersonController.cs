@@ -11,12 +11,15 @@ namespace StarterAssets
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
+		private float initialMoveSpeed;//new
 		[Tooltip("Sprint speed of the character in m/s")]
 		public float SprintSpeed = 6.0f;
 		[Tooltip("Rotation speed of the character")]
 		public float RotationSpeed = 1.0f;
+		private float initialRotationSpeed;//new
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
+		public bool moveFreeze = false; //new
 
 		[Space(10)]
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
@@ -71,6 +74,9 @@ namespace StarterAssets
 			// reset our timeouts on start
 			//_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+
+			initialMoveSpeed = MoveSpeed; //new
+			initialRotationSpeed = RotationSpeed; //new
 		}
 
 		private void Update()
@@ -78,7 +84,12 @@ namespace StarterAssets
 			ApplyGravity();
 			GroundedCheck();
 			Move();
-		}
+
+            if (Input.GetKeyDown(KeyCode.Escape) && moveFreeze == true)
+            {
+				UnfreezeMovement();
+            }
+        }
 
 		private void LateUpdate()
 		{
@@ -228,5 +239,19 @@ namespace StarterAssets
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
-	}
+
+		public void FreezeMovement()
+		{
+			moveFreeze = true;
+			MoveSpeed = 0;
+			RotationSpeed = 0;
+		}
+
+        public void UnfreezeMovement()
+        {
+            moveFreeze = false;
+            MoveSpeed = initialMoveSpeed;
+            RotationSpeed = initialRotationSpeed;
+        }
+    }
 }

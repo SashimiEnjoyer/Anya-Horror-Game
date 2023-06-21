@@ -15,11 +15,11 @@ public class LockPuzzleRotation : MonoBehaviour
 
     public void rotateLock()
     {
-        selfTransform.Rotate(deltaRotation, 0, 0, Space.World);
+        selfTransform.Rotate(0, 0, deltaRotation, Space.Self);
     }
 
     public void rotateLockReverse()
     {
-        selfTransform.Rotate(-deltaRotation, 0, 0, Space.World);
+        selfTransform.Rotate(0, 0, -deltaRotation, Space.Self);
     }
 }
