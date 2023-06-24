@@ -11,6 +11,12 @@ public class ItemInteractAppear : MonoBehaviour
     [Header("Temporary Invoke Function to script FirstPersonController on FreezeMovement()")]
     public UnityEvent onInteractEvent;
 
+    [Header("Lock Passcodes")]
+    public int passcode = 000;
+
+    [Header("Puzzle Finish Event")]
+    public UnityEvent onFinishEvent;
+
     void Start()
     {
 
@@ -20,8 +26,8 @@ public class ItemInteractAppear : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            moveDown();
-            destroyChild();
+            puzzleEnd();
+           
         }
     }
 
@@ -50,5 +56,21 @@ public class ItemInteractAppear : MonoBehaviour
         {
             GameObject.Destroy(transform.GetChild(i).gameObject);
         }
+    }
+
+    public void setPasscode(int setPasscode)
+    {
+        passcode = setPasscode;
+    }
+
+    public void setPuzzleFinishEvent (GameObject initialObject)
+    {
+        onFinishEvent = initialObject.GetComponent<InteractableItems>().onPuzzleFinishEvent;
+    }
+
+    public void puzzleEnd()
+    {
+        moveDown();
+        destroyChild();
     }
 }

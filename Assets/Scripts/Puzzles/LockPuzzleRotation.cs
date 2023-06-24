@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class LockPuzzleRotation : MonoBehaviour
 {
-    private float deltaRotation = 36;
+    [Header("Settings for Digit Lock")]
+    public float deltaRotation = 36;
     private Transform selfTransform;
 
 
@@ -22,4 +23,5 @@ public class LockPuzzleRotation : MonoBehaviour
     {
         selfTransform.Rotate(0, 0, -deltaRotation, Space.Self);
     }
+
 }
