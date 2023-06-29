@@ -11,4 +11,9 @@ public class PuzzleClickInvoke : MonoBehaviour
     {
         onTrigger.Invoke();
     }
+
+    public void DebugLogEntry(string enterText)
+    {
+        Debug.Log(enterText);
+    }
 }

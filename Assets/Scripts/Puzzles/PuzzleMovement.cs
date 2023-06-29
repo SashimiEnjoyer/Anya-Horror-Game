@@ -5,7 +5,7 @@ using UnityEngine;
 public class PuzzleMovement : MonoBehaviour
 {
     public GameObject mainBody;
-    public float rotateSensitivity;
+    public float rotateSensitivity = 2;
 
     void Start()
     {

@@ -8,6 +8,8 @@ public class ItemInteractAppear : MonoBehaviour
     public Transform point1;
     public Transform point2;
 
+    private bool puzzleOngoing = false;
+
     [Header("Temporary Invoke Function to script FirstPersonController on FreezeMovement()")]
     public UnityEvent onInteractEvent;
 
@@ -43,9 +45,14 @@ public class ItemInteractAppear : MonoBehaviour
 
     public void spawnPuzzle(GameObject spawnObject)
     {
-        Instantiate(spawnObject, transform);
-        onInteractEvent?.Invoke();
-        moveUp();
+        if (puzzleOngoing == false)
+        {
+            Instantiate(spawnObject, transform);
+            onInteractEvent?.Invoke();
+            moveUp();
+            puzzleOngoing = true;
+        }
+            
     }
 
     public void destroyChild()
@@ -70,7 +77,11 @@ public class ItemInteractAppear : MonoBehaviour
 
     public void puzzleEnd()
     {
-        moveDown();
-        destroyChild();
+        if (puzzleOngoing == true)
+        {
+            moveDown();
+            destroyChild();
+            puzzleOngoing = false;
+        }
     }
 }

@@ -15,6 +15,6 @@ public class InteractableItems : MonoBehaviour, IInteractable
 
     public void TouchItem()
     {
-        Debug.Log($"Touched {gameObject.name}");
+        //Debug.Log($"Touched {gameObject.name}");
     }
 }
