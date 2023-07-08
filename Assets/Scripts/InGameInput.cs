@@ -50,7 +50,8 @@ public class InGameInput : MonoBehaviour
         onMouseMove = input.InGame.Look.ReadValue<Vector2>();
         onMove = input.InGame.HorizontalMove.ReadValue<Vector2>();
         dashValue = input.InGame.Dash.ReadValue<float>();
-        debugText.SetText(IsDash.ToString());
+        if(debugText != null)
+            debugText.SetText(IsDash.ToString());
     }
 
 
