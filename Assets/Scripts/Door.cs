@@ -1,5 +1,4 @@
 using DG.Tweening;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class Door : MonoBehaviour, IInteractable
@@ -10,11 +9,24 @@ public class Door : MonoBehaviour, IInteractable
 
     public void Execute()
     {
-        Debug.Log("Execute " + transform.rotation);
 
         if (isSlide)
         {
+            if (isReversed)
+            {
+                if (isPositive)
+                {
+                    //transform.Rotate(0, 90, 0);
+                    DOTweenModulePhysics.DOMoveX(gameObject.GetComponent<Rigidbody>(), transform.position.x + 10, 1f);
+                    isPositive = false;
 
+                }
+                else
+                {
+                    DOTweenModulePhysics.DOMoveX(gameObject.GetComponent<Rigidbody>(), transform.position.x - 10, 1f);
+                    isPositive = true;
+                }
+            }
         }
         else
         {
