@@ -9,6 +9,8 @@ public class ItemInteractor : MonoBehaviour
     [SerializeField] GameObject UIIndicator;
     [SerializeField] float rayLength = 2f;
 
+    
+
     bool itemTouched = false;
     IInteractable currentTouchedItem = null;
 
@@ -24,7 +26,7 @@ public class ItemInteractor : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        
         RaycastHit hit;
         if (Physics.Raycast(startRayPosition.position, startRayPosition.TransformDirection(Vector3.forward), out hit, rayLength, interactableLayer))
         {
@@ -51,6 +53,9 @@ public class ItemInteractor : MonoBehaviour
                 itemTouched = false;
              Debug.DrawRay(startRayPosition.position, startRayPosition.TransformDirection(Vector3.forward) * rayLength, Color.white);
         }
+
+        
+
     }
 
     void InteractPressed()
