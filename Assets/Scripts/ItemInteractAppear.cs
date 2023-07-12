@@ -5,19 +5,20 @@ using UnityEngine.Events;
 
 public class ItemInteractAppear : MonoBehaviour
 {
-    public Transform point1;
-    public Transform point2;
-
     private bool puzzleOngoing = false;
+    public GameObject ItemAppear;
 
     [Header("Temporary Invoke Function to script FirstPersonController on FreezeMovement()")]
     public UnityEvent onInteractEvent;
 
-    [Header("Lock Passcodes")]
-    public int passcode = 000;
+    [Header("Universal Value use on all function")]
+    public int universalValue = 000;
 
     [Header("Puzzle Finish Event")]
     public UnityEvent onFinishEvent;
+
+    [Header("Puzzle Exit Event")]
+    public UnityEvent onEndEvent;
 
     void Start()
     {
@@ -26,62 +27,69 @@ public class ItemInteractAppear : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
+        if (Input.GetKeyDown(KeyCode.Escape) && puzzleOngoing == true)
+        {  
+            onEndEvent.Invoke();
             puzzleEnd();
-           
         }
-    }
 
-    public void moveUp() // change to using tween
-    {
-        transform.position = point1.position;
-    }
-
-    public void moveDown() //change to using tween
-    {
-        transform.position = point2.position;
+        if (puzzleOngoing == true)
+        {
+            getReturnValueFromChild();
+        }
     }
 
     public void spawnPuzzle(GameObject spawnObject)
     {
         if (puzzleOngoing == false)
         {
-            Instantiate(spawnObject, transform);
+            Instantiate(spawnObject, ItemAppear.transform);
             onInteractEvent?.Invoke();
-            moveUp();
             puzzleOngoing = true;
         }
-            
+
+        setUniversalValueonChild();
+
+        if (onFinishEvent != null)
+            ItemAppear.transform.GetChild(0).GetComponent<PuzzleController>().onFinish = onFinishEvent;
+
+        if (onEndEvent != null)
+            ItemAppear.transform.GetChild(0).GetComponent<PuzzleController>().onEnd = onEndEvent;
+
     }
 
     public void destroyChild()
     {
-        int childs = transform.childCount;
+        int childs = ItemAppear.transform.childCount;
 
         for (int i = childs - 1; i >= 0; i--)
         {
-            GameObject.Destroy(transform.GetChild(i).gameObject);
+            GameObject.Destroy(ItemAppear.transform.GetChild(i).gameObject);
         }
     }
 
-    public void setPasscode(int setPasscode)
+    public void setUniversalValue(int setNumber)
     {
-        passcode = setPasscode;
+        universalValue = setNumber;
     }
 
-    public void setPuzzleFinishEvent (GameObject initialObject)
+    public void setUniversalValueonChild()
     {
-        onFinishEvent = initialObject.GetComponent<InteractableItems>().onPuzzleFinishEvent;
+        ItemAppear.transform.GetChild(0).GetComponent<PuzzleController>().universalValue = universalValue;
     }
 
     public void puzzleEnd()
     {
         if (puzzleOngoing == true)
         {
-            moveDown();
             destroyChild();
             puzzleOngoing = false;
         }
+    }
+
+    public void getReturnValueFromChild()
+    {
+        if(ItemAppear.transform.GetChild(0).GetComponent<PuzzleController>() != null)
+            universalValue = ItemAppear.transform.GetChild(0).GetComponent<PuzzleController>().universalValue;
     }
 }

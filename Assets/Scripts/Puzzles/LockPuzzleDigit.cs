@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+
 
 public class LockPuzzleDigit : MonoBehaviour
 {
-    public ItemInteractAppear itemInteractAppear;
-
     [Header("Assign Cylinders")]
     public Transform cylinder1;
     public Transform cylinder2;
@@ -24,8 +22,12 @@ public class LockPuzzleDigit : MonoBehaviour
 
     void Start()
     {
-        itemInteractAppear = gameObject.transform.parent.gameObject.GetComponent<ItemInteractAppear>();
-        digitCount = Mathf.FloorToInt(Mathf.Log10(itemInteractAppear.passcode)) + 1;
+        
+    }
+
+    void Update()
+    {
+        digitCount = Mathf.FloorToInt(Mathf.Log10(GetComponent<PuzzleController>().universalValue)) + 1;
 
         if (digitCount == 3)
         {
@@ -34,19 +36,14 @@ public class LockPuzzleDigit : MonoBehaviour
             code3 = digitExtract(3);
         }
         else Debug.Log("Assigned passcode with more than 3 digits, passcode defaults to 123");
-    }
 
-    void Update()
-    {
         digit1 = angleToCode(cylinder1.localEulerAngles.z);
         digit2 = angleToCode(cylinder2.localEulerAngles.z);
         digit3 = angleToCode(cylinder3.localEulerAngles.z);
 
         if (digit1 == code1 && digit2 == code2 && digit3 == code3)
         {
-            itemInteractAppear.onFinishEvent.Invoke();
-            itemInteractAppear.puzzleEnd();
-
+            GetComponent<PuzzleController>().onFinish.Invoke();
         }
     }
 
@@ -67,7 +64,7 @@ public class LockPuzzleDigit : MonoBehaviour
         char[] chars;
         string string1;
 
-        string1 = itemInteractAppear.passcode.ToString();
+        string1 = GetComponent<PuzzleController>().universalValue.ToString();
         chars = string1.ToCharArray();
         result1 = int.Parse(chars[digit - 1].ToString());
 

@@ -4,7 +4,6 @@ using UnityEngine.Events;
 public class InteractableItems : MonoBehaviour, IInteractable
 {
     public UnityEvent onInteractEvent;
-    public UnityEvent onPuzzleFinishEvent;
     public GameObject UIIndicator;
 
     public virtual void Execute()
