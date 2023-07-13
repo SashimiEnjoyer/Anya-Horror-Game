@@ -245,6 +245,7 @@ namespace StarterAssets
 			moveFreeze = true;
 			MoveSpeed = 0;
 			RotationSpeed = 0;
+			GetComponent<ItemInteractor>().isInteracting = true;
 		}
 
         public void UnfreezeMovement()
@@ -252,6 +253,7 @@ namespace StarterAssets
             moveFreeze = false;
             MoveSpeed = initialMoveSpeed;
             RotationSpeed = initialRotationSpeed;
+            GetComponent<ItemInteractor>().isInteracting = false;
         }
     }
 }
