@@ -9,6 +9,9 @@ public class ItemInteractor : MonoBehaviour
     [SerializeField] GameObject UIIndicator;
     [SerializeField] float rayLength = 2f;
 
+    public bool isInteracting = false;
+    public GameObject pointer;
+
     
 
     bool itemTouched = false;
@@ -32,7 +35,8 @@ public class ItemInteractor : MonoBehaviour
         {
             if(!UIIndicator.activeInHierarchy)
                 UIIndicator.SetActive(true);
-            
+
+
             currentTouchedItem ??= hit.transform.GetComponent<IInteractable>();
             
             currentTouchedItem.TouchItem();
@@ -54,7 +58,9 @@ public class ItemInteractor : MonoBehaviour
              Debug.DrawRay(startRayPosition.position, startRayPosition.TransformDirection(Vector3.forward) * rayLength, Color.white);
         }
 
-        
+        if (isInteracting == false)
+            pointer.SetActive(true);
+        else pointer.SetActive(false);
 
     }
 
