@@ -4084,7 +4084,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh529790
+  m_Name: pb_Mesh38844
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5928,6 +5928,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1857158671}
+        m_TargetAssemblyTypeName: TutorialDialogue, Assembly-CSharp
+        m_MethodName: inputText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: go back inside, no explore ples
+          m_BoolArgument: 0
+        m_CallState: 2
   UIIndicator: {fileID: 1857158669}
 --- !u!54 &794106888
 Rigidbody:
@@ -7756,7 +7768,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh529384
+  m_Name: pb_Mesh38440
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17880,6 +17892,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1857158671}
+        m_TargetAssemblyTypeName: TutorialDialogue, Assembly-CSharp
+        m_MethodName: inputText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: water gon. go buy drink outside.
+          m_BoolArgument: 0
+        m_CallState: 2
   UIIndicator: {fileID: 1857158669}
 --- !u!54 &1570142083
 Rigidbody:
@@ -18607,6 +18631,10 @@ PrefabInstance:
     - target: {fileID: 3045376026034416043, guid: 53fc71d987bb2d44890c9ab87c411b4c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045376026034416044, guid: 53fc71d987bb2d44890c9ab87c411b4c, type: 3}
+      propertyPath: moveFreeze
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3045376026034416044, guid: 53fc71d987bb2d44890c9ab87c411b4c, type: 3}
       propertyPath: RotationSpeed
@@ -20605,6 +20633,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1857158671}
+        m_TargetAssemblyTypeName: TutorialDialogue, Assembly-CSharp
+        m_MethodName: inputText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: go back inside, no explore ples
+          m_BoolArgument: 0
+        m_CallState: 2
   UIIndicator: {fileID: 1857158669}
 --- !u!54 &1795717445
 Rigidbody:
@@ -21007,9 +21047,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1034127562399053080, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_Name
+      value: Text (TMP) Tutorial Dialogue Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034127562399053081, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1034127562399053082, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
       propertyPath: m_text
-      value: '-'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034127562399053082, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034127562399053082, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034127562399053082, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255615
       objectReference: {fileID: 0}
     - target: {fileID: 1034127562494805323, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
       propertyPath: m_text
@@ -21018,6 +21078,14 @@ PrefabInstance:
     - target: {fileID: 5555488457149268956, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7243164572018304797, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 1857158677}
+    - target: {fileID: 7243164572018304797, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: timingInScreen
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
@@ -21031,6 +21099,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1034127561657970930, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
   m_PrefabInstance: {fileID: 1857158668}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1857158671 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7243164572018304797, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+  m_PrefabInstance: {fileID: 1857158668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6621ac0a007827747834d55fcd95f0f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1857158677 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1034127562399053082, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+  m_PrefabInstance: {fileID: 1857158668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1868096736
 GameObject:
   m_ObjectHideFlags: 0
@@ -21500,6 +21590,18 @@ MonoBehaviour:
           m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1857158671}
+        m_TargetAssemblyTypeName: TutorialDialogue, Assembly-CSharp
+        m_MethodName: inputText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: go hydrate
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!328 &1926992330
