@@ -37,10 +37,18 @@ public class TutorialDialogue : MonoBehaviour
 
     public void inputText(string text)
     {
-        textMesh.text = text;
-        isInputing = true;
-        textMesh.DOFade( 1, 2);
-        Debug.Log("it just works");
+        if (isInputing == false)
+        {
+            textMesh.text = text;
+            isInputing = true;
+            textMesh.DOFade(1, 2);
+            Debug.Log("it just works");
+        }
+        else
+        {
+            textMesh.text = text;
+            timingInScreen = initialTime;
+        }
     }
 
     public void setTiming(float timing)
@@ -55,4 +63,11 @@ public class TutorialDialogue : MonoBehaviour
         textMesh.DOFade(0, 2);
         timingInScreen = initialTime;
     }
+
+    public void midChange(string text)
+    {
+        textMesh.text = text;
+    }
 }
+
+
