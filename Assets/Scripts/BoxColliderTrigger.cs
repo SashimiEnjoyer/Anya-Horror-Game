@@ -7,16 +7,22 @@ public class BoxColliderTrigger : MonoBehaviour
 {
     [SerializeField] UnityEvent onTriggerEnter;
     [SerializeField] UnityEvent onTriggerExit;
+    public bool isActive = true;
 
     void OnTriggerEnter(Collider other)
     {
-        onTriggerEnter.Invoke();
+        if (other.tag == "Player" && isActive == true)
+            onTriggerEnter.Invoke();
     }
 
     void OnTriggerExit(Collider other)
     {
-        onTriggerExit.Invoke();
+        if (other.tag == "Player" && isActive == true)
+            onTriggerExit.Invoke();
     }
 
-
+    public void deactivate()
+    {
+        isActive = false;
+    }
 }

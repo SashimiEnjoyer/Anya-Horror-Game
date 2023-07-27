@@ -6,6 +6,7 @@ public class Door : MonoBehaviour, IInteractable
     public bool isSlide = false;
     public bool isReversed = false;
     public bool isPositive = false;
+    public bool takingOrder = false;
     public float deltaRotation = 90;
     public float timeRotation = 1;
 
@@ -14,46 +15,49 @@ public class Door : MonoBehaviour, IInteractable
 
     public void Execute()
     {
-
-        if (isSlide)
+        if (takingOrder == false)
         {
-            if (isReversed)
-            {
-                if (isPositive)
-                {
-                    //transform.Rotate(0, 90, 0);
-                    DOTweenModulePhysics.DOMoveX(gameObject.GetComponent<Rigidbody>(), transform.position.x + 10, 1f);
-                    isPositive = false;
+            takingOrder = true;
 
-                }
-                else
+            if (isSlide)
+            {
+                if (isReversed)
                 {
-                    DOTweenModulePhysics.DOMoveX(gameObject.GetComponent<Rigidbody>(), transform.position.x - 10, 1f);
-                    isPositive = true;
+                    if (isPositive)
+                    {
+                        //transform.Rotate(0, 90, 0);
+                        DOTweenModulePhysics.DOMoveX(gameObject.GetComponent<Rigidbody>(), transform.position.x + 10, 1f);
+                        isPositive = false;
+
+                    }
+                    else
+                    {
+                        DOTweenModulePhysics.DOMoveX(gameObject.GetComponent<Rigidbody>(), transform.position.x - 10, 1f);
+                        isPositive = true;
+                    }
+                }
+            }
+            else
+            {
+                if (isReversed)
+                {
+                    if (isPositive)
+                    {
+                        isSlide = true;
+                        //transform.Rotate(0, 90, 0);
+                        DOTweenModulePhysics.DORotate(gameObject.GetComponent<Rigidbody>(), transform.rotation.eulerAngles + new Vector3(0, deltaRotation, 0), timeRotation);
+                        isPositive = false;
+
+                    }
+                    else
+                    {
+                        isSlide = true;
+                        DOTweenModulePhysics.DORotate(gameObject.GetComponent<Rigidbody>(), transform.rotation.eulerAngles + new Vector3(0, -deltaRotation, 0), timeRotation);
+                        isPositive = true;
+                    }
                 }
             }
         }
-        else
-        {
-            if (isReversed)
-            {
-                if (isPositive)
-                {
-                    isSlide = true;
-                    //transform.Rotate(0, 90, 0);
-                    DOTweenModulePhysics.DORotate(gameObject.GetComponent<Rigidbody>(),transform.rotation.eulerAngles + new Vector3(0, deltaRotation, 0), timeRotation);
-                    isPositive = false;
-                    
-                }else
-                {
-                    isSlide = true;
-                    DOTweenModulePhysics.DORotate(gameObject.GetComponent<Rigidbody>(), transform.rotation.eulerAngles + new Vector3(0, -deltaRotation, 0), timeRotation);
-                    isPositive = true;
-                }
-            }
-        }
-        
-        
     }
 
     public void TouchItem()
@@ -66,7 +70,7 @@ public class Door : MonoBehaviour, IInteractable
     {
         
 
-        if(isSlide == true)
+        if(takingOrder == true)
         {
             timer += Time.deltaTime;
 
@@ -77,6 +81,7 @@ public class Door : MonoBehaviour, IInteractable
                 timer = 0;
                 isSlide = false;
                 GetComponent<Collider>().isTrigger = false;
+                takingOrder = false;
             }
         }
 

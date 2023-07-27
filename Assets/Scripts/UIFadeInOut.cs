@@ -11,6 +11,7 @@ public class UIFadeInOut : MonoBehaviour
     public Image fadeScreen;
     private float imageAlpha;
     public bool fadingIn = false;
+    public bool fadingInOnly = false;
 
 
     void Start()
@@ -32,6 +33,14 @@ public class UIFadeInOut : MonoBehaviour
                 FadeOut();
             }
         }
+
+        if (fadingInOnly == true)
+        {
+            if (imageAlpha == 1)
+            {
+                eventInLoading.Invoke();
+            }
+        }
     }
 
     public void FadeIn()
@@ -44,5 +53,11 @@ public class UIFadeInOut : MonoBehaviour
     {
         fadeScreen.DOFade( 0, 1);
         fadingIn = false;
+    }
+
+    public void FadeInOnly()
+    {
+        fadeScreen.DOFade(1, 1);
+        fadingInOnly = true;
     }
 }
