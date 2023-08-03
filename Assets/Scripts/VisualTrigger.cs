@@ -7,11 +7,14 @@ public class VisualTrigger : MonoBehaviour
     [SerializeField] Transform startRayPosition;
     [SerializeField] LayerMask visualLayer;
 
+    public bool getComponentFromPlayer;
+
     private GameObject temporaryObject;
 
     void Start()
     {
-        
+        if (getComponentFromPlayer == true)
+            startRayPosition = GameObject.FindWithTag("Player").transform;
     }
 
     void FixedUpdate()

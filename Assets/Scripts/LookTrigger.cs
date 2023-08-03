@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LookTrigger : MonoBehaviour
 {
     public bool getLookAt;
-    public bool isActive = false;
+    public bool isActive;
+    public UnityEvent lookAtEvent;
+    public UnityEvent notLookEvent;
 
     void Start()
     {
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<Collider>().isTrigger = true;
+
     }
 
     void Update()
@@ -18,12 +20,16 @@ public class LookTrigger : MonoBehaviour
         if (isActive == true)
         {
             if (getLookAt == true)
-                setDisappear();
-            else if (getLookAt == false)
             {
-                setAppear();
-                isActive = false;
+                lookAtEvent.Invoke();
             }
+
+            if (getLookAt == false)
+            {
+                notLookEvent.Invoke();
+            }
+                
+
         }
     }
 
@@ -31,17 +37,4 @@ public class LookTrigger : MonoBehaviour
     {
         isActive = true;
     }
-
-    public void setAppear()
-    {
-        GetComponent<MeshRenderer>().enabled = true;
-        GetComponent<Collider>().isTrigger = false;
-    }
-
-    public void setDisappear()
-    {
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<Collider>().isTrigger = true;
-    }
-
 }
