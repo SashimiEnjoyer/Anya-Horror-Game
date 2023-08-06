@@ -103,4 +103,9 @@ public class Door : MonoBehaviour, IInteractable
         if (other.tag == "Player") 
             playerInDoors = false;
     }
+
+    public void UnTouchItem()
+    {
+        //throw new System.NotImplementedException();
+    }
 }

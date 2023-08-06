@@ -6,4 +6,5 @@ public interface IInteractable
 {
     public void Execute();
     public void TouchItem();
+    public void UnTouchItem();
 }

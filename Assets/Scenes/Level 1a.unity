@@ -6132,6 +6132,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1416047463}
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
+        m_MethodName: UnloadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Outside House
+          m_BoolArgument: 1
+        m_CallState: 2
+  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
 --- !u!54 &757071215
 Rigidbody:
@@ -6328,6 +6341,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  indicatorUISprite: {fileID: 0}
   UIIndicator: {fileID: 1857158669}
 --- !u!54 &758579193
 Rigidbody:
@@ -6766,6 +6780,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
 --- !u!65 &782889181
 BoxCollider:
@@ -7032,6 +7047,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  indicatorUISprite: {fileID: 0}
   UIIndicator: {fileID: 1857158669}
 --- !u!54 &794106888
 Rigidbody:
@@ -8438,6 +8454,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  indicatorUISprite: {fileID: 0}
   UIIndicator: {fileID: 1857158669}
 --- !u!65 &866512837
 BoxCollider:
@@ -9358,6 +9375,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  indicatorUISprite: {fileID: 0}
   UIIndicator: {fileID: 1857158669}
 --- !u!114 &988637336
 MonoBehaviour:
@@ -17270,6 +17288,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
 --- !u!65 &1073509219
 BoxCollider:
@@ -20566,6 +20585,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
 --- !u!54 &1570142083
 Rigidbody:
@@ -23528,6 +23548,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  indicatorUISprite: {fileID: 0}
   UIIndicator: {fileID: 1857158669}
 --- !u!54 &1795717445
 Rigidbody:
@@ -23842,6 +23863,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1034127561640317757, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1034127561657970930, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
       propertyPath: m_Name
       value: Canvas Item Indicator
@@ -24225,6 +24250,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  indicatorUISprite: {fileID: 0}
   UIIndicator: {fileID: 1857158669}
 --- !u!114 &1874842067
 MonoBehaviour:
@@ -24838,6 +24864,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  indicatorUISprite: {fileID: 0}
   UIIndicator: {fileID: 1857158669}
 --- !u!65 &1934959756
 BoxCollider:

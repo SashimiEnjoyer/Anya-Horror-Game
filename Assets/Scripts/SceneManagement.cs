@@ -10,7 +10,7 @@ public class SceneManagement : MonoBehaviour
     void Start()
     {
         if (sceneLoadStartAdditive != null)
-            SceneManager.LoadScene(sceneLoadStartAdditive, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(sceneLoadStartAdditive, LoadSceneMode.Additive);
     }
 
     // Update is called once per frame
@@ -24,8 +24,15 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
     }
 
+   
     public void UnloadScene(string sceneName)
     {
         SceneManager.UnloadSceneAsync(sceneName);
+    }
+
+    [ContextMenu("Unload Scene Additive")]
+    public void TestUnloadScene()
+    {
+        SceneManager.UnloadSceneAsync(sceneLoadStartAdditive);
     }
 }
