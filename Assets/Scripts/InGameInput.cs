@@ -14,6 +14,9 @@ public class InGameInput : MonoBehaviour
     public static Vector2 onMove;
     public static bool IsDash;
     private static float val;
+
+    private bool canMove = false;
+
     private static float dashValue
     {
         set
@@ -43,10 +46,19 @@ public class InGameInput : MonoBehaviour
         input.Enable();
         input.InGame.Interact.performed += InteractInput;
         input.InGame.PauseMenu.performed += PauseInteract;
+        InGameStatus.instance.OnStatusChange += OnStatusChange;
     }
 
     private void Update()
     {
+        if (!canMove)
+        {
+            onMouseMove = Vector2.zero;
+            onMove = Vector2.zero;
+            dashValue = 0;
+            return;
+        }
+
         onMouseMove = input.InGame.Look.ReadValue<Vector2>();
         onMove = input.InGame.HorizontalMove.ReadValue<Vector2>();
         dashValue = input.InGame.Dash.ReadValue<float>();
@@ -57,9 +69,15 @@ public class InGameInput : MonoBehaviour
 
     private void OnDisable()
     {
+        InGameStatus.instance.OnStatusChange += OnStatusChange;
         input.InGame.Interact.performed -= InteractInput;
         input.InGame.PauseMenu.performed -= PauseInteract;
         input.Disable();
+    }
+
+    void OnStatusChange(EStatus status)
+    {
+        canMove = status == EStatus.play;
     }
 
     //[ContextMenu("Check Map")]
