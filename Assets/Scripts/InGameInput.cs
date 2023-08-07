@@ -46,7 +46,7 @@ public class InGameInput : MonoBehaviour
         input.Enable();
         input.InGame.Interact.performed += InteractInput;
         input.InGame.PauseMenu.performed += PauseInteract;
-        InGameStatus.instance.OnStatusChange += OnStatusChange;
+        InGameStatus.OnStatusChange += OnStatusChange;
     }
 
     private void Update()
@@ -69,7 +69,7 @@ public class InGameInput : MonoBehaviour
 
     private void OnDisable()
     {
-        InGameStatus.instance.OnStatusChange += OnStatusChange;
+        InGameStatus.OnStatusChange += OnStatusChange;
         input.InGame.Interact.performed -= InteractInput;
         input.InGame.PauseMenu.performed -= PauseInteract;
         input.Disable();

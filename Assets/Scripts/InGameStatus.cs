@@ -7,12 +7,10 @@ public enum EStatus { pause, play, stop}
 public class InGameStatus : MonoBehaviour
 {
 
-    public static InGameStatus instance;
-
-    public Action<EStatus> OnStatusChange;
-    private EStatus _status;
+    public static Action<EStatus> OnStatusChange;
+    private static EStatus _status;
     
-    public EStatus status
+    public static EStatus status
     {
         set
         {
@@ -26,13 +24,4 @@ public class InGameStatus : MonoBehaviour
         }
     }
 
-    private void Awake()
-    {
-        if (instance == null)
-            instance = this;
-        else
-            Destroy(gameObject);
-
-        status = EStatus.stop;
-    }
 }

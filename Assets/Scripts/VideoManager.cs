@@ -17,7 +17,7 @@ public class VideoManager : MonoBehaviour
     void OnVideoFinished(VideoPlayer vp)
     {
         eventAfterVideo?.Invoke();
-        InGameStatus.instance.status = EStatus.play;
+        InGameStatus.status = EStatus.play;
     }
 
     private void OnDestroy()
