@@ -4,9 +4,16 @@ using UnityEngine.UI;
 
 public class InteractableItems : MonoBehaviour, IInteractable
 {
+    public bool findIndicatorUISprite;
     public UnityEvent onInteractEvent;
     [SerializeField] Sprite indicatorUISprite;
     [SerializeField] GameObject UIIndicator;
+
+    void Awake()
+    {
+        if (findIndicatorUISprite == true)
+            UIIndicator = GameObject.Find("Panel Item Indicator");
+    }
 
     public virtual void Execute()
     {
