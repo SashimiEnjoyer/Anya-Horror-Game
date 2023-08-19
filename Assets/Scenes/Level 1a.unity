@@ -519,7 +519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &64968719
 Transform:
   m_ObjectHideFlags: 0
@@ -3061,7 +3061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &420193938
 Transform:
   m_ObjectHideFlags: 0
@@ -4096,6 +4096,37 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0.1
   m_ShadowAngle: 0
+--- !u!1 &521398125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 521398126}
+  m_Layer: 0
+  m_Name: Tutorial Stuffs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &521398126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521398125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &531943994
 GameObject:
   m_ObjectHideFlags: 0
@@ -20191,6 +20222,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: progressGameObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: progressGameObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 521398125}
     - target: {fileID: 6220518728841854727, guid: 018fca96ced4f63458823b210318f964, type: 3}
       propertyPath: m_Name
       value: InGame Essentials
@@ -20239,52 +20278,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8104898347398694722, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: PointA
+      value: 
+      objectReference: {fileID: 1945272204}
+    - target: {fileID: 8104898347398694722, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: PointB
+      value: 
+      objectReference: {fileID: 623206289}
+    - target: {fileID: 8104898347398694722, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: objectToTeleport
+      value: 
+      objectReference: {fileID: 1976359280}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 018fca96ced4f63458823b210318f964, type: 3}
---- !u!1 &1416047462 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6220518728841854727, guid: 018fca96ced4f63458823b210318f964, type: 3}
+--- !u!114 &1416047463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2109963115685805763, guid: 018fca96ced4f63458823b210318f964, type: 3}
   m_PrefabInstance: {fileID: 1416047461}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1416047463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416047462}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8f5648fc7ecdde48b22d851b7ce7353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoadStartAdditive: Outside House
---- !u!114 &1416047468
+--- !u!114 &1416047468 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8104898347398694722, guid: 018fca96ced4f63458823b210318f964, type: 3}
+  m_PrefabInstance: {fileID: 1416047461}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416047462}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ffab4b5d6334c844a98ad342b5afc8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToTeleport: {fileID: 1976359280}
-  PointA: {fileID: 1945272204}
-  PointB: {fileID: 623206289}
-  findPlayerObject: 0
---- !u!114 &1416047469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416047462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4074d51476af02649a46392806d524b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1421593123
@@ -21661,7 +21688,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1926992332}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -25637,7 +25664,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
+  indicatorUISprite: {fileID: 21300000, guid: be340a165cb9c8d4cb50f1deeb51d4ea, type: 3}
   UIIndicator: {fileID: 1857158669}
 --- !u!114 &1874842067
 MonoBehaviour:
@@ -25982,8 +26009,6 @@ GameObject:
   - component: {fileID: 1926992331}
   - component: {fileID: 1926992330}
   - component: {fileID: 1926992329}
-  - component: {fileID: 1926992332}
-  - component: {fileID: 1926992333}
   - component: {fileID: 1926992334}
   m_Layer: 0
   m_Name: Video Player
@@ -26020,30 +26045,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1926992332}
-        m_TargetAssemblyTypeName: DialogueGeneral, Assembly-CSharp
-        m_MethodName: Execute
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: TutorialDialogue, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: go hydrate
-          m_BoolArgument: 0
-        m_CallState: 0
-      - m_Target: {fileID: 1926992333}
-        m_TargetAssemblyTypeName: InvokewithTimer, Assembly-CSharp
-        m_MethodName: startEvent
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 20
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
       - m_Target: {fileID: 1926992334}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: StartDialogue
@@ -26106,7 +26107,7 @@ Transform:
   m_Father: {fileID: 1918809041}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1926992332
+--- !u!114 &1926992334
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26115,32 +26116,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1926992328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 809d6a205d1a3d54fa1ee31ad50b7b00, type: 3}
+  m_Script: {fileID: 11500000, guid: eb3f08203254fea45bd1478476da4b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueNode:
-  - '"That was nice. I should grab a drink after a long stream."'
-  - Use WASD to move and mouse to look around.
-  - Head to the designated fridge and press "E" to interact.
-  - leave one empty
-  dialogueCount: 0
-  currentDialogue: 0
-  currentString: 
-  timer: 0
-  isInputing: 0
---- !u!114 &1926992333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926992328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fca43c69b422aaf4390a4372f09240e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Events:
+  dialogueUI: {fileID: 1857158670}
+  canMove: 0
+  dialogueLines:
+  - name: 
+    timer: 2
+    lines: '"That was nice. I should grab a drink after a long stream."'
+    OnDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    timer: 2
+    lines: Use WASD to move and mouse to look around.
+    OnDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    timer: 2
+    lines: Head to the designated fridge and press "E" to interact.
+    OnDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    timer: 2
+    lines: leave one empty
+    OnDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  OnFinishDialogue:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 919132148380421883}
@@ -26167,49 +26173,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  isStarting: 0
---- !u!114 &1926992334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926992328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb3f08203254fea45bd1478476da4b8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1857158670}
-  canMove: 0
-  dialogueLines:
-  - name: 
-    lines: '"That was nice. I should grab a drink after a long stream."'
-    timer: 2
-    OnDialogueEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    lines: Use WASD to move and mouse to look around.
-    timer: 2
-    OnDialogueEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    lines: Head to the designated fridge and press "E" to interact.
-    timer: 2
-    OnDialogueEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    lines: leave one empty
-    timer: 2
-    OnDialogueEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  OnFinishDialogue:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1928619713
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,9 +7,9 @@ using UnityEngine.Events;
 public struct Dialogue
 {
     public string name;
+    public float timer;
     [TextArea(5,15)]
     public string lines;
-    public float timer;
     public UnityEvent OnDialogueEvent;
 }
 
@@ -32,11 +32,11 @@ public class DialogueManager : MonoBehaviour
 
         dialogueUI.SetActive(true);
         dialogueText = dialogueUI.GetComponentInChildren<TMP_Text>();
-        SetDialogue();
+        NextDialogue();
         isStarting = true;
     }
 
-    public void SetDialogue()
+    public void NextDialogue()
     {
         Debug.Log("Current Dialogue " + counter);
         timer = 0f;
@@ -64,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         if(timer > dialogueLines[counter].timer)
         {
             counter++;
-            SetDialogue();
+            NextDialogue();
         }
 
         timer += Time.deltaTime;
