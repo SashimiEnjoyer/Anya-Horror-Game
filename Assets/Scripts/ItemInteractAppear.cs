@@ -27,16 +27,20 @@ public class ItemInteractAppear : MonoBehaviour
 
     void Update()
     {
+        if (ItemAppear != null)
+        {
+            if (puzzleOngoing == true)
+            {
+                getReturnValueFromChild();
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape) && puzzleOngoing == true)
-        {  
+        {
             onEndEvent.Invoke();
             puzzleEnd();
         }
 
-        if (puzzleOngoing == true)
-        {
-            getReturnValueFromChild();
-        }
     }
 
     public void spawnPuzzle(GameObject spawnObject)
@@ -82,7 +86,10 @@ public class ItemInteractAppear : MonoBehaviour
     {
         if (puzzleOngoing == true)
         {
+            if(ItemAppear != null)
             destroyChild();
+
+
             puzzleOngoing = false;
         }
     }
@@ -91,5 +98,10 @@ public class ItemInteractAppear : MonoBehaviour
     {
         if(ItemAppear.transform.GetChild(0).GetComponent<PuzzleController>() != null)
             universalValue = ItemAppear.transform.GetChild(0).GetComponent<PuzzleController>().universalValue;
+    }
+
+    public void ForceStart()
+    {
+        puzzleOngoing = true;
     }
 }
