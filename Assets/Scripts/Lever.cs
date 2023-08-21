@@ -46,14 +46,14 @@ public class Lever : MonoBehaviour, IInteractable
                         isSlide = true;
                         //transform.Rotate(0, 90, 0);
                         DOTweenModulePhysics.DORotate(gameObject.GetComponent<Rigidbody>(), transform.rotation.eulerAngles + new Vector3(deltaRotation, 0, 0), timeRotation);
-                        isPositive = false;
+                        //isPositive = false;
 
                     }
                     else
                     {
                         isSlide = true;
                         DOTweenModulePhysics.DORotate(gameObject.GetComponent<Rigidbody>(), transform.rotation.eulerAngles + new Vector3(-deltaRotation, 0, 0), timeRotation);
-                        isPositive = true;
+                        //isPositive = true;
                     }
                 }
             }
