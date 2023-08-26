@@ -13,8 +13,8 @@ public class InGameProgress : MonoBehaviour
     {
         if (instance == null)
             instance = this;
-        else
-            Destroy(this);
+        //else
+            //Destroy(this);
     }
 
     public void SetGameProgress(int progress)
