@@ -5,7 +5,9 @@ using UnityEngine.UI;
 public class InteractableItems : MonoBehaviour, IInteractable
 {
     public bool findIndicatorUISprite;
+    public ProgressTracker progress = new ProgressTracker();
     public UnityEvent onInteractEvent;
+    public UnityEvent onFalseConditionEvent;
     [SerializeField] Sprite indicatorUISprite;
     [SerializeField] GameObject UIIndicator;
 
