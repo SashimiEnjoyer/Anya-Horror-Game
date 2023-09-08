@@ -14,7 +14,7 @@ public class InteractableItems : MonoBehaviour, IInteractable
     void Awake()
     {
         if (findIndicatorUISprite == true)
-            UIIndicator = GameObject.Find("Panel Item Indicator");
+            UIIndicator = GameObject.Find("InGame Essentials").GetComponent<SceneManagement>().panelItemIndicator;
     }
 
     public virtual void Execute()

@@ -7,6 +7,10 @@ public class SceneManagement : MonoBehaviour
 {
     public string sceneLoadStartAdditive;
 
+    [Header("Store Object for UI Indicator")]
+    public GameObject panelItemIndicator;
+
+
     void Start()
     {
         if (sceneLoadStartAdditive != null)
