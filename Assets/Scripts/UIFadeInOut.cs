@@ -8,6 +8,7 @@ using DG.Tweening;
 public class UIFadeInOut : MonoBehaviour
 {
     public UnityEvent eventInLoading;
+    public UnityEvent onFadeFinished;
     public Image fadeScreen;
     private float imageAlpha;
     public bool fadingIn = false;
@@ -52,7 +53,7 @@ public class UIFadeInOut : MonoBehaviour
 
     public void FadeOut()
     {
-        fadeScreen.DOFade( 0, duration);
+        fadeScreen.DOFade(0, duration);
         fadingIn = false;
         fadingInOnly = false;
     }

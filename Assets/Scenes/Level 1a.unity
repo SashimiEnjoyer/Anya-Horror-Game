@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.49
-  m_AmbientMode: 0
+  m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: aeab33f69c199e54794f516d31450ec4, type: 2}
   m_HaloStrength: 0.5
@@ -727,6 +727,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onFadeFinished:
+    m_PersistentCalls:
+      m_Calls: []
   fadeScreen: {fileID: 1899593423}
   fadingIn: 0
   fadingInOnly: 0
@@ -966,6 +969,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onFadeFinished:
+    m_PersistentCalls:
+      m_Calls: []
   fadeScreen: {fileID: 1899593423}
   fadingIn: 0
   fadingInOnly: 0
@@ -1756,6 +1762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 1
+  canNotMoveAfterEnd: 0
   dialogueLines:
   - name: 
     timer: 3
@@ -1828,18 +1835,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 153752468}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &200975045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,6 +1881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 1
+  canNotMoveAfterEnd: 0
   dialogueLines:
   - name: 
     timer: 2
@@ -6487,6 +6483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 0
+  canNotMoveAfterEnd: 0
   dialogueLines:
   - name: 
     timer: 2
@@ -6522,19 +6519,7 @@ MonoBehaviour:
         m_Calls: []
   OnFinishDialogue:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657759730}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &670684399
 GameObject:
   m_ObjectHideFlags: 0
@@ -7488,6 +7473,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onFadeFinished:
+    m_PersistentCalls:
+      m_Calls: []
   fadeScreen: {fileID: 1899593423}
   fadingIn: 0
   fadingInOnly: 0
@@ -7712,7 +7700,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1416047463}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8641,7 +8629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 791107546}
   m_Layer: 0
-  m_Name: Set1
+  m_Name: Set0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11553,7 +11541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 965528682}
   m_Layer: 0
-  m_Name: Set3
+  m_Name: Set2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12278,7 +12266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1003703254
 Light:
   m_ObjectHideFlags: 0
@@ -19792,7 +19780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062829048}
   m_Layer: 0
-  m_Name: Set5
+  m_Name: Set4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20620,6 +20608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 1
+  canNotMoveAfterEnd: 1
   dialogueLines:
   - name: 
     timer: 2
@@ -20648,7 +20637,7 @@ MonoBehaviour:
   OnFinishDialogue:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1154547320}
+      - m_Target: {fileID: 1857158670}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -20658,7 +20647,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1160386039
 GameObject:
@@ -20706,23 +20695,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 1
+  canNotMoveAfterEnd: 0
   dialogueLines:
   - name: 
-    timer: 5
-    lines: To be continued...
-    OnDialogueEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    timer: 5
-    lines: To be continued...
+    timer: 0.1
+    lines: 
     OnDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
   OnFinishDialogue:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1160386039}
+      - m_Target: {fileID: 1857158671}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -20732,7 +20716,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1160951442
 GameObject:
@@ -20917,7 +20901,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh258352
+  m_Name: pb_Mesh258418
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21822,7 +21806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315997937}
   m_Layer: 0
-  m_Name: Set4
+  m_Name: Set3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22168,6 +22152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 0
+  canNotMoveAfterEnd: 0
   dialogueLines:
   - name: 
     timer: 2
@@ -22195,19 +22180,7 @@ MonoBehaviour:
         m_Calls: []
   OnFinishDialogue:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1351464731}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &1388429638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22345,12 +22318,32 @@ PrefabInstance:
       objectReference: {fileID: 1857158669}
     - target: {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
       propertyPath: progressGameObjects.Array.size
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
       propertyPath: progressGameObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 521398125}
+      objectReference: {fileID: 791107545}
+    - target: {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: progressGameObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1540692375}
+    - target: {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: progressGameObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 965528681}
+    - target: {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: progressGameObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 1315997936}
+    - target: {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: progressGameObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 1062829047}
+    - target: {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
+      propertyPath: progressGameObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 2000139975}
     - target: {fileID: 6220518728841854727, guid: 018fca96ced4f63458823b210318f964, type: 3}
       propertyPath: m_Name
       value: InGame Essentials
@@ -23608,7 +23601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1540692376}
   m_Layer: 0
-  m_Name: Set2
+  m_Name: Set1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26948,7 +26941,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh257590
+  m_Name: pb_Mesh257620
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27388,6 +27381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 0
+  canNotMoveAfterEnd: 0
   dialogueLines:
   - name: 
     timer: 4
@@ -27764,7 +27758,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
-  canNotMove: 1
+  canNotMove: 0
+  canNotMoveAfterEnd: 0
   dialogueLines:
   - name: 
     timer: 2
@@ -27813,14 +27808,14 @@ MonoBehaviour:
   OnFinishDialogue:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1852418111}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1425459639}
+        m_TargetAssemblyTypeName: InGameProgress, Assembly-CSharp
+        m_MethodName: SetGameProgress
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -27929,6 +27924,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 196092956857153186, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 196092956857153186, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 196092956857153186, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1416047463}
+    - target: {fileID: 196092956857153186, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 196092956857153186, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 196092956857153186, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneManagement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 196092956857153186, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1034127561265939907, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -28057,8 +28080,40 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4381842783249434874, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4381842783249434874, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4381842783249434874, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1416047463}
+    - target: {fileID: 4381842783249434874, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4381842783249434874, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4381842783249434874, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneManagement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4381842783249434874, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5555488457149268956, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
       propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191746664998547545, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7243164572018304797, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
@@ -28074,6 +28129,16 @@ PrefabInstance:
 --- !u!1 &1857158669 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1034127561640317757, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+  m_PrefabInstance: {fileID: 1857158668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1857158670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7191746664998547545, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+  m_PrefabInstance: {fileID: 1857158668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1857158671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7000002723487097272, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
   m_PrefabInstance: {fileID: 1857158668}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1868096736
@@ -29293,30 +29358,6 @@ MonoBehaviour:
   onTriggerEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1425459639}
-        m_TargetAssemblyTypeName: InGameProgress, Assembly-CSharp
-        m_MethodName: SetGameProgress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1315997936}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1852418113}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: StartDialogue
@@ -30047,7 +30088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000139976}
   m_Layer: 0
-  m_Name: Set6
+  m_Name: Set5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30981,6 +31022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 0
+  canNotMoveAfterEnd: 0
   dialogueLines:
   - name: 
     timer: 2
