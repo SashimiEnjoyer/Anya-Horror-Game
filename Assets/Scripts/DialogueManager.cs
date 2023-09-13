@@ -16,7 +16,7 @@ public struct Dialogue
 public class DialogueManager : MonoBehaviour
 {
     public GameObject dialogueUI;
-    public bool canMove;
+    public bool canNotMove;
     public Dialogue[] dialogueLines;
     public UnityEvent OnFinishDialogue;
     
@@ -27,7 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue() 
     {
-        if (canMove)
+        if (canNotMove)
             InGameStatus.status = EStatus.stop;
 
         dialogueUI.SetActive(true);
