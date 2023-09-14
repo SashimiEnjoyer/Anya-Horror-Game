@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
 {
     public GameObject dialogueUI;
     public bool canNotMove;
+    public bool canNotMoveAfterEnd;
     public Dialogue[] dialogueLines;
     public UnityEvent OnFinishDialogue;
     
@@ -55,7 +56,10 @@ public class DialogueManager : MonoBehaviour
             timer = 0f;
             isStarting = false;
             OnFinishDialogue?.Invoke();
-            InGameStatus.status = EStatus.play;
+
+            if(!canNotMoveAfterEnd)
+                InGameStatus.status = EStatus.play;
+            
             dialogueUI.SetActive(false);
             gameObject.SetActive(false);
             return;

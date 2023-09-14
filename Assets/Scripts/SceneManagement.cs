@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneManagement : MonoBehaviour
 {
     public string sceneLoadStartAdditive;
-
+    public string lastAdditionalSceneActive;
+ 
     [Header("Store Object for UI Indicator")]
     public GameObject panelItemIndicator;
 
@@ -14,7 +15,10 @@ public class SceneManagement : MonoBehaviour
     void Start()
     {
         if (sceneLoadStartAdditive != null)
+        {
             SceneManager.LoadSceneAsync(sceneLoadStartAdditive, LoadSceneMode.Additive);
+            lastAdditionalSceneActive = sceneLoadStartAdditive;
+        }
     }
 
     // Update is called once per frame
@@ -23,15 +27,25 @@ public class SceneManagement : MonoBehaviour
         
     }
 
-    public void LoadScene(string sceneName)
+    public void RestartLevel()
     {
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        if (lastAdditionalSceneActive != null)
+        {
+            UnloadScene(lastAdditionalSceneActive);
+        }
+        SceneManager.LoadScene("Level 1a");
     }
 
-   
+    public void LoadSceneAdditive(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        lastAdditionalSceneActive = sceneName;
+    }
+
     public void UnloadScene(string sceneName)
     {
         SceneManager.UnloadSceneAsync(sceneName);
+        lastAdditionalSceneActive = null;
     }
 
     [ContextMenu("Unload Scene Additive")]
