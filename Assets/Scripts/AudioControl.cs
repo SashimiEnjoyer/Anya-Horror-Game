@@ -6,10 +6,12 @@ using DG.Tweening;
 public class AudioControl : MonoBehaviour
 {
     private AudioSource audioSource;
+    private float initialVolumne;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        initialVolumne = audioSource.volume;
         audioSource.Play();
         audioSource.volume = 0;
     }
@@ -22,11 +24,11 @@ public class AudioControl : MonoBehaviour
 
     public void AudioSourceFadeIn(float fadeTime)
     {
-        audioSource.DOFade(1, fadeTime);
+        audioSource.DOFade(initialVolumne, fadeTime);
     }
 
     public void AudioSourceFadeOut(float fadeTime)
     {
-        audioSource.DOFade(0, fadeTime);
+        audioSource.DOFade(initialVolumne, fadeTime);
     }
 }
