@@ -23911,7 +23911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3045376026034416044, guid: 53fc71d987bb2d44890c9ab87c411b4c, type: 3}
       propertyPath: MoveSpeed
-      value: 4
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3045376026034416044, guid: 53fc71d987bb2d44890c9ab87c411b4c, type: 3}
       propertyPath: moveFreeze
@@ -23919,7 +23919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3045376026034416044, guid: 53fc71d987bb2d44890c9ab87c411b4c, type: 3}
       propertyPath: RotationSpeed
-      value: 2
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 6762092701663610982, guid: 53fc71d987bb2d44890c9ab87c411b4c, type: 3}
       propertyPath: pointer
