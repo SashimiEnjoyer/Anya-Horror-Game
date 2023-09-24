@@ -29180,6 +29180,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 825968540210288599, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1034127561265939907, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
       propertyPath: m_IsActive
       value: 0
