@@ -22,4 +22,9 @@ public class ObjectMove : MonoBehaviour
     {
         transform.DOMove(goToPosition.position, duration);
     }
+
+    public void RotateY(float y)
+    {
+        transform.DORotate(new Vector3 (transform.rotation.x, y, transform.rotation.z), duration);
+    }
 }
