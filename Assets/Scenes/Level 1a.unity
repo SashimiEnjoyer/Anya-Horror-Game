@@ -8961,7 +8961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 1
-  canNotMoveAfterEnd: 0
+  canNotMoveAfterEnd: 1
   dialogueLines:
   - name: 
     timer: 2
@@ -21400,7 +21400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 702732115}
   canNotMove: 1
-  canNotMoveAfterEnd: 0
+  canNotMoveAfterEnd: 1
   dialogueLines:
   - name: 
     timer: 2

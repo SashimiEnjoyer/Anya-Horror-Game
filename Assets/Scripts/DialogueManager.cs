@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue() 
     {
         if (canNotMove)
-            InGameStatus.status = EStatus.stop;
+            InGameStatus.Status = EStatus.dialogue;
 
         dialogueUI.SetActive(true);
         dialogueText = dialogueUI.GetComponentInChildren<TMP_Text>();
@@ -58,8 +58,10 @@ public class DialogueManager : MonoBehaviour
             OnFinishDialogue?.Invoke();
 
             if(!canNotMoveAfterEnd)
-                InGameStatus.status = EStatus.play;
-            
+                InGameStatus.Status = EStatus.play;
+            else
+                InGameStatus.Status = EStatus.stop;
+
             dialogueUI.SetActive(false);
             gameObject.SetActive(false);
             return;
