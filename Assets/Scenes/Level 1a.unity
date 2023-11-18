@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.027831208, g: 0.051598053, b: 0.06507775, a: 1}
+  m_IndirectSpecularColor: {r: 0.006680617, g: 0.015770907, b: 0.027134355, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -607,7 +607,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45014
+  m_Name: pb_Mesh248314
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -817,7 +817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -853,6 +852,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!65 &93514532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2565,7 +2567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -2613,6 +2614,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!65 &306855880
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6878,7 +6882,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -7046,6 +7049,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!54 &757071215
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7214,7 +7220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -7262,6 +7267,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 0}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!54 &758579193
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7712,7 +7720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -7748,6 +7755,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!65 &782889181
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7826,7 +7836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -7862,6 +7871,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!65 &786324455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8106,7 +8118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 791107546}
   m_Layer: 0
-  m_Name: Set0
+  m_Name: Events 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8177,7 +8189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -8213,6 +8224,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!54 &794106888
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9719,7 +9733,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -9743,6 +9756,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!54 &856273208
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9946,10 +9962,11 @@ GameObject:
   - component: {fileID: 866512839}
   - component: {fileID: 866512838}
   - component: {fileID: 866512837}
-  - component: {fileID: 866512836}
+  - component: {fileID: 866512842}
   - component: {fileID: 866512835}
+  - component: {fileID: 866512841}
   m_Layer: 4
-  m_Name: doorHandleBox Stage 1
+  m_Name: Door Handle Interaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9971,42 +9988,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &866512836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866512833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
-  progress:
-    walletTaken: 0
-    trashTaken: 0
-  onInteractEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1170860273}
-        m_TargetAssemblyTypeName: InteractableItems, Assembly-CSharp
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onFalseConditionEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
 --- !u!65 &866512837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10085,6 +10066,134 @@ Transform:
   m_Father: {fileID: 1277732551}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &866512841
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866512833}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &866512842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866512833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7197a37f19269c944ae57d894aeebcb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progress:
+    walletTaken: 0
+    trashTaken: 0
+  onInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onFalseConditionEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
+  UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 866512841}
+  successInteractionClip: {fileID: 8300000, guid: fc433fb4af987714f876b082079fd78c, type: 3}
+  falseInteractionClip: {fileID: 0}
+  objectToMove: {fileID: 1277732545}
+  isSlide: 0
+  isReversed: 1
+  isPositive: 1
+  deltaRotation: 90
+  timeRotation: 1
 --- !u!1 &867597225
 GameObject:
   m_ObjectHideFlags: 0
@@ -10268,7 +10377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -10316,6 +10424,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!65 &873405151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11836,54 +11947,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 517275aa48c9db749a480dfe58bb5ff1, type: 3}
   m_PrefabInstance: {fileID: 118958691}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &988637335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988637333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
-  progress:
-    walletTaken: 0
-    trashTaken: 0
-  onInteractEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 988637336}
-        m_TargetAssemblyTypeName: Door, Assembly-CSharp
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 988637339}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onFalseConditionEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
 --- !u!114 &988637336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11896,13 +11959,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7197a37f19269c944ae57d894aeebcb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progress:
+    walletTaken: 0
+    trashTaken: 0
+  onInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onFalseConditionEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
+  UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 988637339}
+  successInteractionClip: {fileID: 8300000, guid: fc433fb4af987714f876b082079fd78c, type: 3}
+  falseInteractionClip: {fileID: 0}
+  objectToMove: {fileID: 0}
   isSlide: 0
   isReversed: 1
   isPositive: 1
-  takingOrder: 0
   deltaRotation: 90
   timeRotation: 1
-  playerInDoors: 0
 --- !u!54 &988637337
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11942,7 +12018,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fc433fb4af987714f876b082079fd78c, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -20362,7 +20438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -20410,6 +20485,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!65 &1073509219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21582,14 +21660,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
   onInteractEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1277732552}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
         m_MethodName: Execute
         m_Mode: 1
@@ -21601,7 +21678,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1277732553}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
@@ -21630,13 +21707,16 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!43 &1172028516
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29714
+  m_Name: pb_Mesh249224
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22336,121 +22416,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ac54fddab01cedc49b77f843ffc70318, type: 3}
   m_PrefabInstance: {fileID: 797916752}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1277732552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277732545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7197a37f19269c944ae57d894aeebcb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSlide: 0
-  isReversed: 1
-  isPositive: 1
-  takingOrder: 0
-  deltaRotation: 90
-  timeRotation: 1
-  playerInDoors: 0
---- !u!82 &1277732553
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277732545}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fc433fb4af987714f876b082079fd78c, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1280018258
 GameObject:
   m_ObjectHideFlags: 0
@@ -23830,7 +23795,7 @@ GameObject:
   - component: {fileID: 1425459640}
   - component: {fileID: 1425459639}
   m_Layer: 0
-  m_Name: GameStaging
+  m_Name: Important Events
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24189,7 +24154,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28730
+  m_Name: pb_Mesh248232
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25182,7 +25147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -25218,6 +25182,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 0}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!54 &1528726798
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28659,7 +28626,7 @@ GameObject:
   - component: {fileID: 1795717447}
   - component: {fileID: 1795717446}
   - component: {fileID: 1795717445}
-  - component: {fileID: 1795717444}
+  - component: {fileID: 1795717451}
   - component: {fileID: 1795717450}
   m_Layer: 4
   m_Name: VendingMachineRed
@@ -28668,54 +28635,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1795717444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795717443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
-  progress:
-    walletTaken: 0
-    trashTaken: 0
-  onInteractEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1795717450}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1795717444}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onFalseConditionEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
 --- !u!54 &1795717445
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28810,7 +28729,36 @@ Transform:
   m_Father: {fileID: 1732515182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1795717450
+--- !u!114 &1795717450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795717443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd78b9c4ce9dfc43ae7e4db847f7847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progress:
+    walletTaken: 0
+    trashTaken: 0
+  onInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onFalseConditionEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  indicatorUISprite: {fileID: 0}
+  UIIndicator: {fileID: 0}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
+  audioPlayer: {fileID: 0}
+  haveWallet: {fileID: 0}
+  noWallet: {fileID: 0}
+--- !u!82 &1795717451
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28820,8 +28768,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 777ff6dd2b2477d48aa21efc9d974a25, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -29381,7 +29329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -29441,6 +29388,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!65 &1812117957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30709,54 +30659,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 517275aa48c9db749a480dfe58bb5ff1, type: 3}
   m_PrefabInstance: {fileID: 840708583}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1874842066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1874842064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
-  progress:
-    walletTaken: 0
-    trashTaken: 0
-  onInteractEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1874842067}
-        m_TargetAssemblyTypeName: Door, Assembly-CSharp
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1874842070}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onFalseConditionEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  indicatorUISprite: {fileID: 21300000, guid: be340a165cb9c8d4cb50f1deeb51d4ea, type: 3}
-  UIIndicator: {fileID: 1857158669}
 --- !u!114 &1874842067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30769,13 +30671,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7197a37f19269c944ae57d894aeebcb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progress:
+    walletTaken: 0
+    trashTaken: 0
+  onInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onFalseConditionEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
+  UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 1874842070}
+  successInteractionClip: {fileID: 8300000, guid: fc433fb4af987714f876b082079fd78c, type: 3}
+  falseInteractionClip: {fileID: 0}
+  objectToMove: {fileID: 0}
   isSlide: 0
   isReversed: 1
   isPositive: 1
-  takingOrder: 0
   deltaRotation: 90
   timeRotation: 1
-  playerInDoors: 0
 --- !u!54 &1874842068
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31504,11 +31419,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1934959754}
-  - component: {fileID: 1934959758}
-  - component: {fileID: 1934959757}
   - component: {fileID: 1934959756}
   - component: {fileID: 1934959755}
   - component: {fileID: 1934959759}
+  - component: {fileID: 1934959760}
   m_Layer: 4
   m_Name: doorHandleBox
   m_TagString: Untagged
@@ -31543,7 +31457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -31574,18 +31487,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1277732553}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1783996176}
         m_TargetAssemblyTypeName: AudioControl, Assembly-CSharp
         m_MethodName: AudioSourceFadeIn
@@ -31613,8 +31514,11 @@ MonoBehaviour:
   onFalseConditionEvent:
     m_PersistentCalls:
       m_Calls: []
-  indicatorUISprite: {fileID: 0}
+  indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 1934959760}
+  successInteractionClip: {fileID: 8300000, guid: 96a09185c15f48d43b29e9342f56a27b, type: 3}
+  falseInteractionClip: {fileID: 0}
 --- !u!65 &1934959756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31628,56 +31532,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1934959757
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934959753}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1934959758
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934959753}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &1934959759
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31694,6 +31548,102 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!82 &1934959760
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934959753}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1944415816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33316,7 +33266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -33376,6 +33325,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!65 &2031567356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36594,13 +36546,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7197a37f19269c944ae57d894aeebcb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progress:
+    walletTaken: 0
+    trashTaken: 0
+  onInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onFalseConditionEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  indicatorUISprite: {fileID: 0}
+  UIIndicator: {fileID: 0}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
+  objectToMove: {fileID: 0}
   isSlide: 0
   isReversed: 1
   isPositive: 0
-  takingOrder: 0
   deltaRotation: 90
   timeRotation: 1
-  playerInDoors: 0
 --- !u!114 &6499119680460434098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36613,7 +36578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886cd09e6a87e60439cdcb504eb06e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findIndicatorUISprite: 0
   progress:
     walletTaken: 0
     trashTaken: 0
@@ -36625,6 +36589,9 @@ MonoBehaviour:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
   UIIndicator: {fileID: 1857158669}
+  audioSource: {fileID: 0}
+  successInteractionClip: {fileID: 0}
+  falseInteractionClip: {fileID: 0}
 --- !u!4 &6563599028746961126
 Transform:
   m_ObjectHideFlags: 0
