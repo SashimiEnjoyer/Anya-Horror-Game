@@ -851,7 +851,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -2613,7 +2612,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -7048,7 +7046,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -7266,7 +7263,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 0}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -7754,7 +7750,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -7870,7 +7865,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -8223,7 +8217,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -9755,7 +9748,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -10184,7 +10176,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 866512841}
   successInteractionClip: {fileID: 8300000, guid: fc433fb4af987714f876b082079fd78c, type: 3}
   falseInteractionClip: {fileID: 0}
@@ -10423,7 +10414,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -11969,7 +11959,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 988637339}
   successInteractionClip: {fileID: 8300000, guid: fc433fb4af987714f876b082079fd78c, type: 3}
   falseInteractionClip: {fileID: 0}
@@ -13015,6 +13004,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1100816102102561353, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
   m_PrefabInstance: {fileID: 1857158668}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1043794288 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4631176890761363326, guid: 27dc84397a4ca9442b7d02b2204f8bfc, type: 3}
+  m_PrefabInstance: {fileID: 1857158668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043794287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1043908418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20484,7 +20484,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -21706,7 +21705,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -23699,7 +23697,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2109963115685805763, guid: 018fca96ced4f63458823b210318f964, type: 3}
   m_PrefabInstance: {fileID: 1416047461}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2080160517}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8f5648fc7ecdde48b22d851b7ce7353, type: 3}
@@ -23710,7 +23708,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8104898347398694722, guid: 018fca96ced4f63458823b210318f964, type: 3}
   m_PrefabInstance: {fileID: 1416047461}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2080160517}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ffab4b5d6334c844a98ad342b5afc8b, type: 3}
@@ -25181,7 +25179,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 0}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -28751,7 +28748,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 0}
-  UIIndicator: {fileID: 0}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -29387,7 +29383,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -30681,7 +30676,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 1874842070}
   successInteractionClip: {fileID: 8300000, guid: fc433fb4af987714f876b082079fd78c, type: 3}
   falseInteractionClip: {fileID: 0}
@@ -31515,7 +31509,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 1934959760}
   successInteractionClip: {fileID: 8300000, guid: 96a09185c15f48d43b29e9342f56a27b, type: 3}
   falseInteractionClip: {fileID: 0}
@@ -33324,7 +33317,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -34020,6 +34012,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070032840}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2080160517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6220518728841854727, guid: 018fca96ced4f63458823b210318f964, type: 3}
+  m_PrefabInstance: {fileID: 1416047461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2080160524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080160517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe2832b2d5fadd49a47f2d7fdf6a347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicatorObject: {fileID: 1857158669}
+  indicatorImage: {fileID: 1043794288}
 --- !u!1 &2082461854
 GameObject:
   m_ObjectHideFlags: 0
@@ -36556,7 +36567,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 0}
-  UIIndicator: {fileID: 0}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -36588,7 +36598,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 1857158669}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
