@@ -14926,7 +14926,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   indicatorUISprite: {fileID: 21300000, guid: db0085326d6857c4786de5aa4288f533, type: 3}
-  UIIndicator: {fileID: 0}
   audioSource: {fileID: 0}
   successInteractionClip: {fileID: 0}
   falseInteractionClip: {fileID: 0}
@@ -15005,7 +15004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab954077c2ccd2246a4a8dce2593c464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inGameProgress: {fileID: 0}
 --- !u!4 &423977514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3326260572401726188, guid: 8ec2ef3292ae25f4f9feca91744327ea, type: 3}

@@ -545,7 +545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 65391416}
   - component: {fileID: 65391415}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: transitions (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -997,7 +997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 108093167}
   - component: {fileID: 108093166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: transitions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6512,7 +6512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 734900310}
   - component: {fileID: 734900309}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: transitions (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6633,7 +6633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6043137438841686733, guid: 2b3459e5fe64eb545bc0a1839d68104b, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b3459e5fe64eb545bc0a1839d68104b, type: 3}
       propertyPath: m_Name
@@ -6641,7 +6641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b3459e5fe64eb545bc0a1839d68104b, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b3459e5fe64eb545bc0a1839d68104b, type: 3}
       propertyPath: m_IsActive
@@ -6649,11 +6649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4218089010747567180, guid: 2b3459e5fe64eb545bc0a1839d68104b, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6089481176674046838, guid: 2b3459e5fe64eb545bc0a1839d68104b, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b3459e5fe64eb545bc0a1839d68104b, type: 3}
@@ -6846,7 +6846,7 @@ GameObject:
   - component: {fileID: 757071215}
   - component: {fileID: 757071214}
   - component: {fileID: 757071219}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: Bed (hitbox only)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7183,7 +7183,7 @@ GameObject:
   - component: {fileID: 758579193}
   - component: {fileID: 758579192}
   - component: {fileID: 758579197}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: FrontDoorEnter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7945,7 +7945,7 @@ GameObject:
   - component: {fileID: 788972621}
   - component: {fileID: 788972625}
   - component: {fileID: 788972624}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: raycast trigger box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10333,7 +10333,7 @@ GameObject:
   - component: {fileID: 873405152}
   - component: {fileID: 873405151}
   - component: {fileID: 873405150}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: trashbag (hitbox only)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22920,7 +22920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1321812849}
   - component: {fileID: 1321812850}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: transitions (3) Ending no key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23218,9 +23218,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4549757445259455984, guid: 5afdc597f3f74324bb30dcd9298b49ae, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5afdc597f3f74324bb30dcd9298b49ae, type: 3}
       propertyPath: m_Name
       value: anya silhouette traced
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5afdc597f3f74324bb30dcd9298b49ae, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573726282031660673, guid: 5afdc597f3f74324bb30dcd9298b49ae, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5afdc597f3f74324bb30dcd9298b49ae, type: 3}
@@ -23792,7 +23804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1425459640}
   - component: {fileID: 1425459639}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Important Events
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25111,7 +25123,7 @@ GameObject:
   - component: {fileID: 1528726799}
   - component: {fileID: 1528726798}
   - component: {fileID: 1528726797}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: FrontDoorEnter1 (Ending Forgot Key)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31417,7 +31429,7 @@ GameObject:
   - component: {fileID: 1934959755}
   - component: {fileID: 1934959759}
   - component: {fileID: 1934959760}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: doorHandleBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33608,7 +33620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2043630667}
   - component: {fileID: 2043630668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: transitions (4) Ending TBC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33759,7 +33771,7 @@ GameObject:
   - component: {fileID: 2066247102}
   - component: {fileID: 2066247101}
   - component: {fileID: 2066247100}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AreaTrigger9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
