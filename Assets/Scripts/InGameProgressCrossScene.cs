@@ -4,6 +4,6 @@ public class InGameProgressCrossScene : MonoBehaviour
 {
     public void SetGameProgressCross(int progress)
     {
-        InGameProgress.instance.SetGameProgress(progress);
+        GameObject.Find("InGame Essentials").GetComponent<InGameProgress>().SetGameProgress(progress);
     }
 }
