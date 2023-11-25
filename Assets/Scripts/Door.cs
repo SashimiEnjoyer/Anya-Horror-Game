@@ -10,6 +10,7 @@ public class Door : InteractableItems
     public bool isReversed = false;
     public bool isPositive = false;
     public float deltaRotation = 90;
+    public float deltaMove = 10;
     public float timeRotation = 1;
 
     private void Awake()
@@ -29,13 +30,13 @@ public class Door : InteractableItems
                 if (isPositive)
                 {
                     //transform.Rotate(0, 90, 0);
-                    DOTweenModulePhysics.DOMoveX(objectToMove.GetComponent<Rigidbody>(), transform.position.x + 10, 1f);
+                    DOTweenModulePhysics.DOMoveX(objectToMove.GetComponent<Rigidbody>(), transform.position.x + deltaMove, 1f);
                     isPositive = false;
 
                 }
                 else
                 {
-                    DOTweenModulePhysics.DOMoveX(objectToMove.GetComponent<Rigidbody>(), transform.position.x - 10, 1f);
+                    DOTweenModulePhysics.DOMoveX(objectToMove.GetComponent<Rigidbody>(), transform.position.x - deltaMove, 1f);
                     isPositive = true;
                 }
             }
