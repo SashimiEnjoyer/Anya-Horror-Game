@@ -607,7 +607,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh248314
+  m_Name: pb_Mesh65072
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8563,7 +8563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ac54fddab01cedc49b77f843ffc70318, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000014901161
+      value: -0.00000001502756
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ac54fddab01cedc49b77f843ffc70318, type: 3}
       propertyPath: m_LocalRotation.z
@@ -21714,7 +21714,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh249224
+  m_Name: pb_Mesh65984
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23702,7 +23702,8 @@ PrefabInstance:
       propertyPath: objectToTeleport
       value: 
       objectReference: {fileID: 1976359280}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3665321374616116303, guid: 018fca96ced4f63458823b210318f964, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 018fca96ced4f63458823b210318f964, type: 3}
 --- !u!114 &1416047463 stripped
 MonoBehaviour:
@@ -23806,7 +23807,7 @@ GameObject:
   - component: {fileID: 1425459639}
   m_Layer: 3
   m_Name: Important Events
-  m_TagString: Untagged
+  m_TagString: Progress
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24164,7 +24165,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh248232
+  m_Name: pb_Mesh64990
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

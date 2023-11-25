@@ -4,21 +4,13 @@ using UnityEngine;
 
 public class InGameProgress : MonoBehaviour
 {
-    public static InGameProgress instance;
 
     public GameObject[] progressGameObjects;
     private int lastProgress;
 
-    private void Awake()
-    {
-        if (instance == null)
-            instance = this;
-        //else
-            //Destroy(this);
-    }
-
     public void SetGameProgress(int progress)
     {
+        Debug.LogWarning("Execute! " + progress);
         progressGameObjects[lastProgress].SetActive(false);
         progressGameObjects[progress].SetActive(true);
         lastProgress = progress;
